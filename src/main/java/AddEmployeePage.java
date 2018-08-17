@@ -16,6 +16,9 @@ public class AddEmployeePage {
     @FindBy(id = "lastName")
     private WebElement last_name;
 
+    @FindBy(id = "employeeId")
+    private WebElement employee_id;
+
     @FindBy(id = "location_inputfileddiv")
     private WebElement location_element;
 
@@ -43,13 +46,15 @@ public class AddEmployeePage {
     @FindBy(id = "personal_details_tab")
     private WebElement personal_details_tab;
 
-    public void fillEmployeeDetails(WebDriverWait wait, Actions action, String first, String middle, String last) {
+    public void fillEmployeeDetails(WebDriverWait wait, Actions action,
+                                      String first, String middle, String last, String id) {
         wait.until(ExpectedConditions.visibilityOf(first_name));
         first_name.sendKeys(first);
         middle_name.sendKeys(middle);
         last_name.sendKeys(last);
         action.click(location_element).sendKeys(Keys.DOWN).sendKeys(Keys.DOWN).sendKeys(Keys.DOWN).sendKeys(
                 Keys.ENTER).perform();
+        employee_id.sendKeys(id);
     }
 
     public void clickCreateLoginDetails() {
@@ -65,7 +70,7 @@ public class AddEmployeePage {
 
     public void clickSave(WebDriverWait wait) {
         try{
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } catch (Exception e) {}
         save_btn.click();
         wait.until(ExpectedConditions.visibilityOf(personal_details_tab));

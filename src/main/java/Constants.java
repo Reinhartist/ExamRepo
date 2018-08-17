@@ -5,4 +5,8 @@ public class Constants {
 
     final static String username = "Admin";
     final static String password = "AdminAdmin";
+
+    final static String first_name = "Very";
+    final static String middle_name = "Cool";
+    final static String last_name = "Guy";
 }
