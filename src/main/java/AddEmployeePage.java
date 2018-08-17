@@ -70,7 +70,7 @@ public class AddEmployeePage {
 
     public void clickSave(WebDriverWait wait) {
         try{
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (Exception e) {}
         save_btn.click();
         wait.until(ExpectedConditions.visibilityOf(personal_details_tab));
