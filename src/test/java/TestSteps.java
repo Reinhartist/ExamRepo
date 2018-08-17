@@ -1,4 +1,3 @@
-import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -9,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import static junit.framework.TestCase.assertEquals;
 
 public class TestSteps {
     private WebDriver driver;
@@ -95,6 +96,6 @@ public class TestSteps {
     @Then("^select them for inspection$")
     public void select_them_for_inspection() {
         employeeListPage.inspect_user();
-        while (true);
+        assertEquals(driver.getTitle(), "Personal Details");
     }
 }
