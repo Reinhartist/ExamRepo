@@ -5,10 +5,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DashboardPage {
     @FindBy(xpath = "//*[@id=\"menu_pim_viewPimModule\"]/a/span[2]")
-    WebElement pim;
+    private WebElement pim;
 
     @FindBy(id = "menu_pim_addEmployee")
-    WebElement add_employee;
+    private WebElement add_employee;
 
     public void click_pim() {
         pim.click();

@@ -31,6 +31,8 @@ public class TestSteps {
     private String new_user;
     private String new_user_id;
 
+    private boolean passed;
+
     @Before
     public void setup() {
         System.setProperty("webdriver.chrome.driver", "C:\\Development\\web_driver\\chromedriver.exe");
@@ -41,10 +43,18 @@ public class TestSteps {
 
         new_user = HelperFunctions.gen_random_name();
         new_user_id = HelperFunctions.gen_random_id();
+
+        passed = false;
     }
 
     @After
     public void tearDown() {
+        if(passed) {
+            test.log(LogStatus.PASS, "Passed everything");
+        } else {
+            test.log(LogStatus.FAIL, "Failed");
+        }
+        report.endTest(test);
         report.flush();
         driver.quit();
     }
@@ -121,10 +131,9 @@ public class TestSteps {
         employeeListPage.inspect_user();
         if(driver.getTitle().equals("Personal Details")) {
             test.log(LogStatus.PASS, "Managed to make the user");
-            report.endTest(test);
+            passed = true;
         } else {
-            test.log(LogStatus.FAIL, "Did not manage to make user");
-            report.endTest(test);
+            test.log(LogStatus.FAIL, "Did not manage to make user or can't be searched for");
             fail();
         }
     }
