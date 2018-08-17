@@ -69,6 +69,7 @@ public class AddEmployeePage {
     }
 
     public void clickSave(WebDriverWait wait) {
+        //Not sure what to do with this, if the save button is clicked too fast it won't go through...
         try{
             Thread.sleep(3000);
         } catch (Exception e) {}
