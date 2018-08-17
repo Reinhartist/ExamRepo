@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acec4049-c70c-4304-98e5-8e998b3540f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/AddEmployeePage.class" afterPath="$PROJECT_DIR$/target/classes/AddEmployeePage.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/AddEmployeePage.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/AddEmployeePage.java" afterPath="$PROJECT_DIR$/src/main/java/AddEmployeePage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Reports/createuser.html" afterPath="$PROJECT_DIR$/src/test/Reports/createuser.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -81,7 +80,7 @@
       <file leaf-file-name="AddEmployeePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AddEmployeePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="573">
               <caret line="71" column="102" lean-forward="false" selection-start-line="71" selection-start-column="102" selection-end-line="71" selection-end-column="102" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -390,14 +389,11 @@
       <updated>1534428827788</updated>
       <workItem from="1534428830620" duration="248000" />
       <workItem from="1534430981534" duration="98000" />
-      <workItem from="1534492955483" duration="11044000" />
+      <workItem from="1534492955483" duration="11127000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RunnerTest - 2018.08.17 at 11h 40m 25s.xml">
-      <configuration name="RunnerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RunnerTest - 2018.08.17 at 11h 44m 17s.xml">
       <configuration name="RunnerTest" configurationId="JUnit" />
     </history-entry>
@@ -425,9 +421,12 @@
     <history-entry file="RunnerTest - 2018.08.17 at 12h 06m 55s.xml">
       <configuration name="RunnerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RunnerTest - 2018.08.17 at 12h 08m 49s.xml">
+      <configuration name="RunnerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11390000" />
+    <option name="totallyTimeSpent" value="11473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -618,7 +617,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AddEmployeePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="573">
           <caret line="71" column="102" lean-forward="false" selection-start-line="71" selection-start-column="102" selection-end-line="71" selection-end-column="102" />
           <folding>
             <element signature="imports" expanded="true" />
